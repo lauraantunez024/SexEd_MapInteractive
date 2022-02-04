@@ -1,0 +1,29 @@
+html, body {
+    font-family: National;
+  }
+  .card-text {
+    font-family: Tiempos;
+  }
+
+  h3 {
+    text-align: center;
+  }
+   #map {
+    height: 200px;
+  }
+  .leaflet-control-zoom, .leaflet-control-attribution {
+    display: none;
+  }
+  .leaflet-container {
+    background-color: transparent!important;
+  }
+  .card-line {
+    display: flex;
+  }
+  .card-line i {
+    margin-right: 6px;
+  }
+  .subhead {
+    font-size: 14px;
+    text-align: left;
+  }

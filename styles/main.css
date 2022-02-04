@@ -1,97 +1,248 @@
-@charset "UTF-8";
-/* CSS Document */
 
-    @font-face {
-      font-family: 'National';
-      src: url('fonts/National-Light.otf');
-      font-weight: 200;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'National';
-      src: url('fonts/National-Thin.otf');
-      font-weight: 100;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'National';
-      src: url('fonts/National-Regular.otf');
-      font-weight: 300;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'National';
-      src: url('fonts/National-Black.otf');
-      font-weight: 900;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'National';
-      src: url('fonts/National-Bold.otf');
-      font-weight: 700;
-      font-style: normal;
-    }
-    @font-face {
-      font-family: 'Tiempos';
-      src: url('fonts/TiemposText-Regular.woff');
-      font-weight: 300;
-      font-style: normal;
-    }
-/*body*/
-body {
-    font-family: 'National','Tiempos', Arial, Helvetica, sans-serif;
+
+  html, body {
+    font-family: Arial;
+    align-items: center!important;
+  }
+  body {
+    font-family: Arial, Helvetica, sans-serif;
     margin: 0;
     width:100%;
     padding: 0;
     color: #333;
     background-color: #fff;
 }
-/*#form {
-  text-align:center;
+
+
+#selectState {
+  margin: 0 0 6px 0!important;
 }
-#radio-left {
-  border-top-left-radius:24px;
-  border-bottom-left-radius:24px;
-}
-#radio-right {
-  border-top-right-radius:24px;
-  border-bottom-right-radius:24px;
-}
-#radios {
-  font-family: 'National','Arial', sans-serif;
-  font-weight: 300;
-  font-size: 12px;
-  left: 280px;
-  margin: 0 auto;
-  padding:15px 0 0px 0;
-  text-transform: uppercase;
-  top: 535px;
+  .card-text {
+    font-family: Arial;
   }
-input {
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  -ms-appearance: none;
-  -o-appearance: none;
-  appearance: none;
+  #selectState {
+    margin: 5px 0 0 0;
+  }
+  .card.changed {
+    background-color: #4682B4;
+  }
+  h3, h5{
+    text-align: center;
+  }
+   #map {
+    min-width: inherit;
+    height: 360px!important;
+  }
+  .leaflet-control-zoom, .leaflet-control-attribution {
+    display: none;
+  }
+  .leaflet-container {
+    background-color: transparent!important;
+  }
+.col-card {
+  padding: 0 0!important;
 }
-input:checked+.radio{
-  background: #474747;
-  border: 1px solid black;
+.row-card {
+  margin: 0 0!important;
 }
-.radio {
-  background-color: grey;
-  border: 1px solid white;
-  color:white;
-  display:inline-block;
-  font-weight:300;
-  font-family: 'National','Arial', sans-serif;
+.btn-link {
+  font-size: 12px!important;
+  text-align: left!important;
+  padding-bottom: 0!important;
+}
+.btn-primary {
+  background-color: #006dbf!important;
+  padding-top: 0!important;
+  padding-bottom: 2px!important;
+  line-height: 28px!important;
+  border-radius: 0px!important;
+  font-size: 14px!important;
+  font-weight: 300!important;
+  margin-bottom: 4px!important;
+}
+.multi-collapse {
+    display: grid;
+    grid-template-columns:50% 50%;
+}
+#card {
+  position: relative;
+  padding: 0px 40px!important;
+  opacity: .95;
+
+}
+.axis {
+  font-family: 'Arial',sans-serif;
+  text-align: center;
+}
+
+
+
+.card-body {
+  background-color: white;
+}
+
+.card-group {
+  max-width: 280px;
+  min-height: auto;
+  text-align: center;
+  position: absolute;
+  left: 10px;
+  top: -460px;
+}
+.card-group.right {
+  right: -240px;
+  float: right!important;
+}
+@media only screen and (min-width: 600px) {
+  .card-group.right {
+    left: 300px;
+  }
+}
+.card-line {
+  margin-bottom: 12px;
+  display: flex;
+
+}
+.subhead {
+  font-size: 12px;
+  text-align: left;
+}
+.card-line i {
+  margin-right: 6px;
+}
+.card-text {
+  text-align: left;
+  line-height: 14px!important;
+  font-size: 12px;
+}
+.icon {
+  min-width: 16px!important;
+}
+
+
+.fa-check {
+  color: #34a326;
+}
+
+.fa-times {
+  color: #ed1313
+}
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  line-height: 18px;
+}
+.state-name {
+  color: white;
+  line-height: 36px;
+  margin: 0 0 0 4px;
+}
+.close {
+  padding-right: 4px!important;
+}
+.close .fa-times {
+  color: white!important;
+  font-size: 22px!important;
+  line-height: 14px!important;
+}
+.close-container {
+  position: relative;
+  margin-left: 20px;
+}
+#card {
+  display: block;
+  align-items: center;
+  margin-left: 0;
+}
+#card.invisible {
+  display: none;
+}
+.state-text {
+  pointer-events: none;
+}
+#state-name {
+  color: black!important;
+}
+.sexEdMandated {
+  background-color: #41b6e6!important;
+  border-radius: 0px!important;
+  padding: 4px 5px 20px!important;
+}
+.bothMandated {
+  background-color: #00bfb2!important;
+  border-radius: 0px!important;
+  padding: 4px 5px 20px!important;
+}
+.hivMandated {
+  background-color: #ffc845!important;
+  border-radius: 0px!important;
+  padding: 4px 5px 20px!important;
+}
+
+.neitherMandated {
+  background-color: #e56db1!important;
+  border-radius: 0px!important;
+  padding: 4px 5px 20px!important;
+}
+
+.nMandated {
+  fill: #e56db1!important;
+
+}
+
+.hMandated {
+  fill: #ffc845!important;
+
+}
+.sMandated {
+  fill: #41b6e6!important;
+}
+
+.bMandated {
+  fill: #00bfb2!important;
+}
+.legend {
+  padding: 0 40px;
+}
+.labels {
+  display: grid;
+  grid-template-columns:50% 50%;
+}
+@media only screen and (max-width: 480px) {
+  .labels {
+    grid-template-columns:100%;
+  }
+}
+.legend span {
+  border: 1px solid #ccc;
+  line-height: 15px;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  margin-right: 5px;
+}
+.legend-title, .legend-attr {
+  font-size: 14px;
+  font-weight: 700;
+}
+.legend-attr {
+  font-size: 12px;
+  font-weight: 300;
+  max-width: 300px;
+  width: 70%;
   margin: 0 auto;
-  padding: 3px 10px 3px 8px;
-  text-align:center;
-  text-transform: uppercase;
-  transition: background-color 0.3s ease;
-  width:100px;
-}*/
+}
+.gridline {
+  opacity:.2;
+}
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*body*/
+
+
 .container {
   min-width:420px;
   max-width:520px;
@@ -116,7 +267,7 @@ div.masthead{
 
 /*headline*/
 .header{
-    font-family: 'National';
+    font-family: 'Arial';
     font-size: 40px;
     margin-bottom:0;
     text-align: left;
@@ -161,7 +312,7 @@ line{
 }
 
 .axis {
-  font-family: 'National';
+  font-family: 'Arial';
   font-size: 10px !important;
   font-weight:200;
 }
@@ -193,59 +344,8 @@ p {
 .bar-district {
   pointer-events: none;
 }
-.d3-tip { 
-    display: block;
-    z-index: 10;
-    max-width: 350px;
-    width:300px;
-    opacity:1;
-    color: #333333;
-    background-color: white;
-    border: 1px solid black!important;
-    position: absolute;     
-    text-align: left;    
-    padding: 2px 5px 5px 5px;
-    font-size: 10px; 
-    font-family:Tiempos;        
-    pointer-events: none;  
-    line-height: 10px !important;   
-}
-.d3-tip p {
-  font-family:National;
-  font-size:14px;
-  margin-bottom:7px;
-  padding:0px;
-  text-align:center !important;
-}
-.d3-tip h3 {
-  font-family:Tiempos;
-  font-weight:300;
-  font-size:12px;
-  margin:0px;
-  padding:0px;
-  text-align:center !important;
-}
 
-span{
-  font-family:PublicoTextBold;   
-}
 /* Creates a small triangle extender for the tooltip */
-.d3-tip:after {
-  box-sizing: border-box;
-  display: inline;
-  font-size: 10px;
-  width: 100%;
-  line-height: 1;
-  color: rgba(0, 0, 0, 0.8);
-  position: absolute;
-  text-align: center;
-}
-
-.d3-tip.n:after {
-  margin: 1px 0 0 0;
-  top: 100%;
-  left: 0;
-}
 
 .content-rail {
   width:100%;
@@ -261,17 +361,15 @@ span{
 .flag{
 color:black;
 background-color:#ffcf31;
-font-family:'National';
+font-family:'Arial';
 font-size: 16px;
 font-weight:100;
 height:30px;
-padding:4px 10px 0px 5px;
+padding:4px 10px 4px 5px;
 display:flex;
 justify-content: space-between;
 width:100%;
 }
-.flag div { 
-padding:4px 20px 0 0; }
 
 .flag-logo {
   min-width:200px;
@@ -280,13 +378,17 @@ padding:4px 20px 0 0; }
   background-repeat: no-repeat;
   background-size: 80%;
 }
+
+.labels {
+  display: grid;
+}
 /* Header */
 .hed{
-font-family: 'National';
+font-family: 'Arial';
 font-size: 32px;
 font-weight:700;
 line-height: 40px;
-margin: 5px 0px 2px 40px!important;
+padding: 5px 0px 2px 40px!important;
 position: relative;
 text-align: left;
 }
@@ -296,12 +398,9 @@ text-align: left;
 font-family: 'Tiempos';
 font-size:14px;
 text-align: left;
-margin-top: 5px!important;
+padding: 5px 40px 16px 40px!important;
 display: inline-block;
 line-height: 25px;
-margin-left: 30px;
-padding:0px 10px;
-margin-bottom: 16px!important;
 width:95%;
 }
 /* Chart or visualization */
@@ -312,7 +411,7 @@ padding:auto;
 margin:auto;
 }
 .legend {
-font-family:'National';
+font-family:'Arial';
 font-size:12px;
 }
 
@@ -321,26 +420,27 @@ font-size:12px;
 font-family:'Tiempos';
 font-size: 12px;
 margin-top: 0px;
-margin-left:10px;
 min-height: 100px!important;
 }
 .label {
-font-family:'National';
-font-size:12px;
-font-weight:700;
+font-family:'Arial';
+font-size:14px;
+}
+.label p {
+  line-height: 26px;
+  margin-bottom: 0px;
 }
 .footer{
-border-top:2px solid black;
 color: black;
 font-family:'Tiempos';
 font-size: 10px;
-margin:0 10px;
-text-align:right;
-width:90%;
+margin:0 auto;
+width:86%;
+opacity: .5;
 }
 .axis text {
 font-weight:300;
-font-family:'National';
+font-family:'Arial';
 text-transform:uppercase;
 }
 .source{
@@ -353,10 +453,4 @@ text {
 pointer-events: none;
 }
 
-.axis {
-  font-family: 'National','Arial',sans-serif;
-  text-align: center;
-}
-.gridline {
-  opacity:.2;
-}
+

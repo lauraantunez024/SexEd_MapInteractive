@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<meta charset="utf-8">
+<head>
+  <script src="https://use.fontawesome.com/61b0b44e4f.js"></script>
+
+<link rel="stylesheet" href="./styles/main.css"/>
+<!--link rel="stylesheet" href="styles/fonts.css"/-->
+
+<script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+<link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css" />
+<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"></script>
+<script src="styles/card.css"></script>
+</head>
+
+<body>
+  <div class="container">
+  <div class="row">
+    <div class="col">
+  <!-- Card Deck -->
+  <div class="card-group">
+
+<div class="card">
+  <div class="card-head">
+    <div><h4 class="state-name" id="state-name"></h4></div>
+    <div class="close-container"><a class="btn close" id="btn-close" role="button" aria-expanded="false" aria-controls="collapsibleContent"><i class="fa fa-times"></i></a></div>
+  </div>
+<div class="card-body">
+  <!-- <p class="card-text">With supporting text below as a natural lead-in to additional content.</p> -->
+    <div class="card-line" id="category-mandated">
+      <i class="icon fa fa-check" aria-hidden="true"></i>
+      <span class="card-text">
+        Sex education is mandated
+      </span>
+    </div>
+    <div class="card-line" id="category-HIV">
+      <i class="icon fa fa-check" aria-hidden="true"></i>
+      <span class="card-text">
+        HIV education is mandated
+      </span>
+    </div>
+    <div class="card-line" id="category-abstinence">
+      <i class="icon fa fa-check" aria-hidden="true"></i>
+      <span class="card-text">
+        Stresses abstinence-only programs</span>
+    </div>
+    <h5 class="subhead">
+      When provided, sex ed must be or include:</h5>
+    <div class="card-line" id="category-accurate">
+      <i class="icon fa fa-check" aria-hidden="true"></i>
+      <span class="card-text">
+       Medically accurate
+     </span>
+   </div>
+   <div class="card-line" id="category-lgbt">
+      <i class="icon fa fa-check" aria-hidden="true"></i>
+      <span class="card-text">
+        Inclusive to LGBTQ folks
+      </span>
+    </div>
+    <div class="card-line" id="category-consent">
+      <i class="icon fa fa-check" aria-hidden="true"></i>
+      <span class="card-text">
+        Information on consent</span>
+    </div>
+    <div class="card-line" id="category-boundaries">
+      <i class="icon fa fa-check" aria-hidden="true"></i>
+      <span class="card-text">
+        Refusal skills and personal boundaries
+      </span>
+    </div>
+    <div class="card-line" id="category-relationships">
+      <i class="icon fa fa-check" aria-hidden="true"></i>
+      <span class="card-text">
+        Information on healthy relationships
+      </span>
+    </div>
+  <a class="btn btn-primary" data-bs-toggle="collapse" href="#collapsibleContent" role="button" aria-expanded="false" aria-controls="collapsibleContent">More resources</a>
+  <div class="collapse multi-collapse" id="collapsibleContent">
+    <a data-toggle="collapse" data-target="#collapsibleContent" href="https://www.plannedparenthood.org/learn/roo-sexual-health-chatbot" target = "_blank" class="btn btn-link">For Teengers</a>
+    <a data-toggle="collapse" data-target="#collapsibleContent" href="https://amaze.org/jr/" target = "_blank" class="btn btn-link">For Parents</a>
+    <a data-toggle="collapse" data-target="#collapsibleContent" href="https://v3.unhushed.org/subscription-info" target = "_blank" class="btn btn-link">Educators - Paid </a>
+    <a data-toggle="collapse" data-target="#collapsibleContent" href="https://drive.google.com/drive/u/1/folders/1DHDWUz4mAK-A7Z-A_sbSLK4wE9xVlfH3" target = "_blank" class="btn btn-link">Educators - Free</a>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<script>
+
+</script>
+</body>

@@ -1,0 +1,188 @@
+  html, body {
+    font-family: Arial;
+  }
+  .card-text {
+    font-family: Tiempos;
+  }
+  .card.changed {
+    background-color: #4682B4;
+  }
+  h3, h5{
+    text-align: center;
+  }
+   #map {
+    min-height: 90%;
+    min-width: inherit;
+
+  }
+  .leaflet-control-zoom, .leaflet-control-attribution {
+    display: none;
+  }
+  .leaflet-container {
+    background-color: transparent!important;
+  }
+
+.card {
+
+  border-radius: 0px!important;
+  margin: 0px 10px;
+  padding: 4px 5px 20px!important;
+}
+#card {
+  width: 100%;
+}
+#card.right {
+  right: 10px;
+}
+.card-body {
+  background-color: white;
+}
+.card-group {
+  width: 100%;
+  min-width: 300px;
+  min-height: auto;
+  text-align: center;
+}
+.card-line {
+  margin-bottom: 12px;
+}
+.card-text {
+  text-align: left;
+  line-height: 18px!important;
+}
+.icon {
+  min-width: 16px!important;
+}
+
+
+.fa-check {
+  color: #34a326;
+}
+
+.fa-times {
+  color: #ed1313
+}
+.card-head {
+  display: flex;
+  justify-content: space-between;
+  line-height: 18px;
+}
+.state-name {
+  color: white;
+  line-height: 36px;
+  margin: 0 0 0 4px;
+}
+.close {
+  padding-right: 4px!important;
+}
+.close .fa-times {
+  color: white!important;
+  font-size: 22px!important;
+  line-height: 14px!important;
+}
+.close-container {
+  position: relative;
+  margin-left: 20px;
+}
+#card {
+  display: block;
+  width: 100%;
+}
+#card.invisible {
+  display: none;
+}
+.state-text {
+  pointer-events: none;
+}
+
+
+.sexEdMandated {
+  background-color: #41b6e6!important;
+  border-radius: 0px!important;
+  margin: 0px 10px;
+  padding: 4px 5px 20px!important;
+
+}
+.bothMandated {
+  background-color: #00bfb2!important;
+  border-radius: 0px!important;
+  margin: 0px 10px;
+  padding: 4px 5px 20px!important;
+
+}
+.hivMandated {
+  background-color: #ffc845!important;
+  border-radius: 0px!important;
+  margin: 0px 10px;
+  padding: 4px 5px 20px!important;
+
+}
+
+.neitherMandated {
+  background-color: #e56db1!important;
+  border-radius: 0px!important;
+  margin: 0px 10px;
+  padding: 4px 5px 20px!important;
+
+}
+
+.nMandated {
+  background-color: #e56db1!important;
+
+
+}
+.hMandated {
+  background-color: #ffc845!important;
+
+
+}
+.sMandated {
+  background-color: #41b6e6!important;
+
+}
+
+.bMandated {
+    background-color: #00bfb2!important;
+
+}
+
+.legend {
+  margin-left: 20px;
+  width: 90%;
+}
+
+.legend span {
+  border: 1px solid #ccc;
+
+  line-height: 15px;
+  float: left;
+  width: 25px;
+  height: 25px;
+  margin: 2px;
+  margin-right: 5px;
+}
+
+.legend-title {
+  font-size: 24px;
+}
+
+p {
+  text-align: left;
+}
+
+.legend-subtitle {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+.legend-attr {
+  color: gray;
+  opacity: .90;
+}
+
+li {
+  font-size: 16px;
+}
+
+#note {
+  color: black;
+}
